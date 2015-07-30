@@ -1,0 +1,236 @@
+========================================================================
+ NZ FSMS6 (South Island)
+------------------------------------------------------------------------
+ https://koordinates.com/layer/301-nz-fsms6-south-island/
+========================================================================
+From: Ollivier & Co
+
+Description:
+  1.1.1	Forest Service Mapping Series 6 (FSMS6)
+  
+  The 23 completed maps provide the distribution of indigenous forest vegetation
+  for all of the North Island and the bulk of the South Island at a scale of
+  1:250,000. These maps were primarily compiled by Mr John Nicholls with some of
+  the South Island maps compiled by Mr Dudley Franklin. Black and white aerial
+  photographs, dating from 1948 to 1955 and at a scale of 15 chains per inch,
+  supplemented by extensive ground truthing and some 16,000 National Forest Survey
+  and Ecosurvey plots, were used to determine forest class boundaries. These were
+  transferred to 1:63360 topographic maps. The maps were field checked and then
+  copied for production by FRI graphics staff (Herbert 1997, pers. comm.).
+  
+  Most maps were completed by the NZ Forest Service, with a small number being
+  finished by the Ministry of Forestry and then by Landcare Research Ltd. Appendix
+  1 gives the list of maps digitised. The date of the photographs that were used
+  to compile each map is not known exactly.
+  
+  1.1.2	Forest Service Mapping Series 15 (FSMS15)
+  
+  There are two FSMS15 comprising 1:1,000,000 maps of the North Island, and South
+  Island (including Stewart Island). These were compiled by NZFS Conservancy and
+  Head Office staff for the 1974 Forestry Development Conference. Forest
+  boundaries for the 1:1,000,000 FSMS15 maps are significantly less accurate than
+  those for the 1:250,000 FSMS6 maps (Herbert and Nicholls, 1997, pers. comm.).
+  Data sources included existing FSMS6 maps (with 18 classes coalesced into eight
+  super classes), local published and unpublished maps and local knowledge for
+  areas not cover by the FSMS6. The Te Anau, Hauroko and Mataura FSMS6 series maps
+  were substituted for by the South Island FSMS15 map.
+  
+  1.1.3	Forest Service Type Map Series No. 2 (FSTM2)
+  
+  These are a collection of detailed forest class maps at 1:63360 scale. Coverage
+  is confined to parts of the central North Island.
+  
+   1.1.4	Vegetation  of Stewart Island
+  
+  Mr Hugh Wilson (Wilson, 1987) developed a detailed map of the vegetation of
+  Steward Island. Wilson’s Podocarp/hardwood forest, and rata-kamahi hardwood
+  forest polygons (Types A 1-2, B3) were digitised.
+  
+  1.2	Forest Class Description
+  
+  There are eighteen forest classes described in the FSMS6 map series. These are
+  described in Table 1. The source is Nicholls and Herbert (1995). FSMS15 has
+  eight super classes and these are defined in Table 2.
+  
+  Table 1: Forest classes, codes and IPCC class
+  						(Dbase)
+  Class						Code	IPCC Class
+  Kauri						A	C
+  Kauri -Softwoods-Hardwoods			B	M
+  Kauri -Softwoods-Hardwoods-Beeches		C	M
+  Softwoods					L	C
+  Rimu-Matai-Hardwoods				M	M
+  Rimu-Taraire - Tawa				E	M
+  Rimu-Tawa					D	M
+  Rimu-General Hardwoods				F	M
+  Lowland Steepland and Highland Softwoods - Hardwoods	G	M
+  Rimu-Tawa-Beeches				H	M
+  Rimu - General Hardwoods - Beeches		I	M
+  Highland Softwoods-Beeches			J	M
+  Taraire-Tawa					S	B
+  Tawa						N	B
+  General Hardwoods				P	B
+  Tawa Beeches					O	B
+  General Hardwoods  - Beeches			T	B
+  Beeches						K	B
+  
+  IPCC Class Definitions: C: Conifer, B: Broadleaf, M: Mixed.
+  
+  
+   Table 2: FSMS15 forest classes
+  				Dbase
+  Class				code / FSMS6Classes 	Description			IPCC Class
+  Kauri - Podocarp - Hardwood	  /A, B, C	All forest containing kauri, including
+  minor 
+  						area of pure kauri and local occurrence of 
+  						beech					M
+  Podocarp			L/ L		Forest of abundant podocarps		C
+  Lowland Podocarp - Hardwood	1/ D, E, F, M, pt. G	Virgin or lightly logged
+  podocarp - 
+  							hardwood forest below the 
+  							altitudinal limit of rimu	M
+  Lowland Hardwood		2/ N, S, pt. P	Residual and second growth forest below the 
+  						altitudinal limit of rimu and minor areas of 
+  						natural pure hardwood forest.		B
+  Upland Podocarp - Hardwood	3/ Pts G, P	Virgin or lightly logged podocarp -
+  hardwood 
+  						above the altitudinal limit of rimu and 
+  						minor areas of natural pure hardwood forest.	
+  											M
+  Podocarp - Hardwood - Beech	4/ H, I		Virgin or lightly logged forest of mixed 
+  						podocarp - hardwood and beech below the 
+  						altitudinal limit of rimu	M
+  Hardwood - Beech		5/ O, T		Residual or second growth forest and minor 
+  						areas of natural pure hardwood - beech.	B
+  Beech				6/ J, K		Virgin and lightly logged or second-growth 
+  						forests predominantly composed of beech	B
+  Wilson Stewart Island		7/		Podocarp/hardwood forest, and rata-kamahi 
+  						hardwood forest.			M
+  
+  
+  2.	METHODS
+  2.1	Digitising and Topology Generation
+  
+  The maps were digitised by staff at the Forest Research Institute under
+  standards listed in Appendix 2, using the Terrasoft Geographic Information
+  System. The linear features that made up each forest class polygon are shared
+  between two feature classes one, called NZFS6 which contains the national
+  coverage, and the other based on the respective map sheet number. This allows
+  themes to be developed for a national view and also for the individual map
+  sheets.
+  
+  The line work is topologically correct with no over-, or under- shoots.
+  
+  Each polygon has a nationally unique identifier and which is linked to a dbase
+  table containing a code letter which describes the forest vegetation class.
+  
+  These maps were digitised for the purpose of providing indigenous forest
+  vegetation cover for usage at a national scale. There has been no formal
+  checking of the accuracy of the digitised linework. Any errors are considered to
+  be insignificant for determining a 1990 indigenous forest vegetation baseline
+  database. Each polygon was checked to confirm correct tagging. During that
+  process any significant linear differences were noted and corrected.
+  
+  2.2	Problems
+  
+  2.2.1	Incorrect map details
+  
+  In several places errors on the maps were found. Either the FSTM2 maps were
+  consulted for greater detail where coverage existed or Mr John Nicholls was,
+  personally,  consulted and the error corrected.
+  
+  2.2.2	Map source quality
+  
+  Most FSMS6 maps where unused, unfolded sheets with only sheet 12 being an unused
+  folded map. The FSMS15 South Island map was a well used map with significant
+  fold lines. This map also had other printed information which made precise
+  measurement of some forest class boundaries difficult. 
+  
+  
+  Standards
+  
+  This document defines the standards used for digitising the forest class maps
+  (NZFS Map Series 6, FSMS15 and Wilson, 1987).
+  
+  Source
+  The source of the FSMS6 data is the 1:125,000 flat map sheets, the FSMS15 maps
+  and the Vegetation map contained in Wilson (1987).
+  
+  Digitising
+  The following digitising standards were used.
+  
+  A minimum of five points for registration should be selected from a rectangular
+  range encapsulating the immediate digitising area.
+  These points then should he entered into Convert and both the input and the
+  resultant NZMG coordinates checked before the map is registered.
+  The registration error should be (in Terrasoft) 0.00%.
+  The media should be anchored firmly to the digitiser. The RMU laboratory should
+  be used with the air conditioning turn on.
+  Registration should occur at least twice a day, but occur more frequently if the
+  humidity changes.
+  All lines and polygon which represent a forest type needs to be captured
+  irrespective of size.
+  All intersections should have a node digitised.
+  The two feature classes are NZFS6 and NZFS6_<sheet number>; NZFS15, and SI_WIL
+  respectively.
+  All joins to lines must be done to the actual point not the nearest digitised
+  node, (touch line is preferable to snap).
+  The polygon construction method should be used for small polygons, though care
+  must be used in the final close to ensure correct shape is retained.
+  The line to be digitised, for a boundary defined by the bush symbol, is along
+  the top of the symbol. Where the bush symbol changes direction care does need to
+  be taken. In a convex direction change the above is true, but in a sharp concave
+  (cave shaped) direction change the vertexes of the line may well go through the
+  ‘base of the symbol.
+  
+  Output
+  Shape must be identical
+  
+  Theme creation
+  A Theme will be created for each map sheet.
+  The national NZFS6 theme will be created by including the previously digitised
+  map sheets and the FSMS15 and Wilson’s map.
+  Polygon tags are to be corrected between the map sheets to make them all
+  unique.
+  All dangles and overlaps, and bad polygons are to be corrected.
+  
+  Tagging
+  All polygons are to be tagged with a code representing the forest type.
+  All sliver polygons are to be removed.
+  
+  Checking
+  A plot should be created at the original scale and overlayed over the original
+  map. Each polygon is checked to confirm correct tagging.
+  
+
+Region: New Zealand
+
+Category: Science & Environment
+
+Projection: WGS 84
+
+------------------------------------------------------------------------
+ Processing steps applied by Koordinates
+------------------------------------------------------------------------
+
+- imported to Koordinates in Shapefile format on 14 Oct 2011
+- reprojected from NZGD49 / New Zealand Map Grid to WGS 84
+- converted by Koordinates to Shapefile on 01 Sep 2014
+
+------------------------------------------------------------------------
+ LICENSE: Public Domain
+ Link: https://koordinates.com/license/public-domain/
+------------------------------------------------------------------------
+
+  This geodata is believed to be in the public domain.
+  
+  Reasons for a public domain claim can include, but are not limited to:
+  
+   * the geodata is a work of the US Federal Government. Works of the US Federal Government are generally not eligible for copyright protection.
+   * the geodata was published in the USA before 1923.
+   * the geodata was published in the USA without a copyright notice between 1923 and 1965.
+   * the geodata is photography created in Australia before 1955.
+   * the original copyright has expired, the period of which can vary from jurisdiction to jurisdiction. See Wikipedia for copyright situations per country: <http://en.wikipedia.org/wiki/Wikipedia:Copyright_situations_by_country>.
+  
+  For a longer discussion of public domain around the world: <http://en.wikipedia.org/wiki/Wikipedia:Public_domain>.
+

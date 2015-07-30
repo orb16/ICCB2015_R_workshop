@@ -167,6 +167,13 @@ e.g.
 weta_dist$distance.log <- log(weta_dist$distance.to.edge)
 ```
 
+## Key base R knowledge: summary
+
+We can use: 
+
+(1) The square bracket notaton to select either rows, __or__ columns; and
+(2) `Dataframe$column` notation to select columns. 
+
 ## Before we move on:
 
 \begin{columns}[c] % the "c" option specifies center vertical alignment
@@ -427,7 +434,8 @@ Slice:
 
 More useful than you might think. 
 
-```{r, results = 'hide'}
+```{r, results = 'hide', message=FALSE, comment=FALSE, warning=FALSE}
+require(lme4)
 require(datasets)
 data(sleepstudy)
 head(sleepstudy)
@@ -570,3 +578,11 @@ head(mites)
 
 \center
 ![dplyrworldcloud](figures/wordcloud_thanks2.pdf) 
+
+## Want to share/use/improve?
+
+\Huge Please do!
+
+\normalsize
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
