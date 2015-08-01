@@ -9,8 +9,8 @@ Olivia
 
 ## Updated files for data manipulation: 
 
-PDF of latest version of data manipulation with answers: http://bit.ly/1IAZsb0
-Rmd of latest version of data manipulation with answers: http://bit.ly/1IQ1uWI 
+(1) PDF of latest version of data manipulation with answers: http://bit.ly/1IAZsb0
+(2) Rmd of latest version of data manipulation with answers: http://bit.ly/1IQ1uWI 
 
 ## Google doc for team notes:
 
