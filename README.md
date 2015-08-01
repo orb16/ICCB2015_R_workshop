@@ -11,6 +11,9 @@ Olivia
 
 https://docs.google.com/document/d/10TJZIyDtuMHteXS2X1z-C4mkHnLUF-NSOu_pEzxBBoA/edit?usp=sharing
 
+Bitly url: http://bit.ly/1UencFM 
+
+
 ## Plan for today
 
 * 8.30 - 9 am - set up 
