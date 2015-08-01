@@ -7,6 +7,11 @@ Best wishes,
 
 Olivia
 
+## Updated files for data manipulation: 
+
+PDF of latest version of data manipulation with answers: http://bit.ly/1IAZsb0
+Rmd of latest version of data manipulation with answers: http://bit.ly/1IQ1uWI 
+
 ## Google doc for team notes:
 
 https://docs.google.com/document/d/10TJZIyDtuMHteXS2X1z-C4mkHnLUF-NSOu_pEzxBBoA/edit?usp=sharing
