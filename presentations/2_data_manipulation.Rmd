@@ -130,6 +130,21 @@ We've just been told that the "average.other.dbh" value in line 67 is wrong, and
 1. Select the cell by using square bracket notation and print to screen (it should read 8.83)
 2. Amend it using the assign (<-) function to 18.83
 
+## Square bracket notation - class exercise - answers
+
+```{r, eval = FALSE}
+# checking which cell? (it should be 8.83)
+weta_data[ 67, 8 ]
+
+## changing the error to 18.83
+weta_data[ 67, 8 ] <- 18.83
+
+# checking that it has changed
+
+weta_data[ 67, 8 ]
+
+```
+
 ## Square bracket notation - individual exercise
 
 You are interested in whether weta presence varies with distance to edge canopy cover. 
@@ -303,9 +318,30 @@ manuka_data %>%
 
 ## Select, filter & arrange - individual exercise
 
-(1) Please create a dataframe with GW (groundwater) less than 10 and the columns CH and CO.
+(1) Please create a dataframe with GW (groundwater) less than 50 and the columns CH and CO.
 
 (2) Using the weta dataset, please select the rows which have either a cave weta (weta.cave) present, or more than two weta in total (total.weta). Please select the columns motel, total.weta.inclcave and canopy.cover, but rename motel to mansion. Please arrange it by mansion.
+
+## Select, filter & arrange - individual exercise answers (1) 
+
+```{r, eval = FALSE}
+
+answer1 <- manuka_data %>% 
+  filter(GW < 50) %>%
+  select(CH, CO)
+```
+
+
+## Select, filter & arrange - individual exercise answers (2) 
+```{r}
+answer2 <- weta_data %>%
+  filter(weta.cave == 1 | total.weta.inclcave > 2) %>%
+  select(mansion = motel, 
+         total.weta.inclcave, 
+         canopy.cover) %>% 
+  arrange(mansion)
+
+```
 
 ## Creating new variables: mutate
 
@@ -420,9 +456,19 @@ weta_data %>% group_by(weta.presence) %>%
 
 ## Summarising: individual exercise
 
-(1) Please calculate the mean and standard deviation of the distance to edge, grouped by the number of weta (total.weta) in motels.  
+(1) Please calculate the mean and standard deviation of the distance to edge, grouped by the number of cave weta (cave.weta.presence) in motels.  
 
 (2) Please also report the number of observations per group. 
+
+## Summarising: individual exercise - answers
+
+```{r, eval = FALSE}
+weta_data %>% 
+  group_by(cave.weta.presence) %>%
+  summarise(mean_weta = mean(total.weta),
+            sd_weta = sd(total.weta),
+            n_obs = n())
+```
 
 
 ## Slicing
@@ -569,6 +615,44 @@ head(mites)
 
 (4) Please select the 10 most numerous species, based on mean count. 
 
+
+## Data format - individual exercise - answers (1)
+
+- Please turn the data from wide format (currently) to long format. Please call the columns ‘species’ and ‘count’ 
+
+
+```{r, eval = FALSE}
+
+mites_wide <- mites %>% 
+  gather(key = species, 
+         value = count,
+         Brachy:Trimalc2)
+head(mites_wide)
+```
+
+## Data format - individual exercise - answers (2)
+
+```{r, eval = FALSE}
+# Please summarise by species the mean count 
+
+mites_wide %>% 
+  group_by(species) %>% 
+  summarise(mean_count = mean(count))
+```
+
+
+## Data format - individual exercise - answers (3)
+
+- Please select the 10 most numerous species, based on mean count. 
+- This requires us to arrange by mean_count (descending order, then slice the top ten)
+
+```{r, eval = FALSE}
+mites_wide %>% 
+  group_by(species) %>% 
+  summarise(mean_count = mean(count)) %>%
+  arrange(desc(mean_count)) %>%
+  slice(1:10)
+```
 
 ## And now
 
