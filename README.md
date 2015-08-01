@@ -23,3 +23,21 @@ https://docs.google.com/document/d/10TJZIyDtuMHteXS2X1z-C4mkHnLUF-NSOu_pEzxBBoA/
 * 2.45 - 3 pm - more coffee 
 * 3 - 4.30 pm - data visualisation 
 * 4.30 - individual work/Q&A (free choice)
+* 
+##  Packages required for today:
+
+(1) ggplot2 
+(2) ggthemes 
+(3) wesanderson 
+(4) GGally (for ggpairs) 
+(5) coefplot2() (**) 
+(6) effects 
+(7) vegan 
+(8) gridExtra
+(9) dplyr 
+(10) tidyr
+(11) lme4 
+(12) datasets
+
+** coefplot2 will probably only work is you use: `install.packages("coefplot2",
+repos = "http://www.math.mcmaster.ca/bolker/R", type="source")
