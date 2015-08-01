@@ -6,3 +6,7 @@ You'll find all materials under the 'presentations' folder. Please feel free to 
 Best wishes,
 
 Olivia
+
+## Google doc for team notes:
+
+https://docs.google.com/document/d/10TJZIyDtuMHteXS2X1z-C4mkHnLUF-NSOu_pEzxBBoA/edit?usp=sharing
