@@ -16,4 +16,8 @@ __Phylopic, NMDS visualisation and GGpairs:__
 __Spatial data:__
 "ggplot\_extended\_B"
 
+__Overdispersion in GLMMs:__
+"overdisp_notes.html" 
+The data is in the "owls.txt" file in the same folder (there is code to download it from the website, but I have put the .txt file in there just in case).
+
 __Materials originally presented__ by Jennifer Bufford and Olivia Burge at the Lincoln and Canterbury ggplot seminars respectively.  See https://github.com/orb16/seminaRs/ for all the seminar materials.
