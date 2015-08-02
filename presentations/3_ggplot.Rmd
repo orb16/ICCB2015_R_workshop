@@ -236,6 +236,27 @@ ggplot(data = mite_all, aes(y = Brachy, x = WatrCont)) +
 
 (2) Please create a scatter plot the abundance of NCOR mites ("NCOR") against substrate density (SubsDens). Please colour by topo type ("Topo") and change the size by shrub type ("Shrub"). Please use the classic theme (`theme_classic()`). 
 
+## Individual exercises - answers (1) 
+- histogram of weta abundance (total.weta) with black outline and grey fill
+
+```{r, eval = FALSE}
+ggplot(weta_data, aes(x = total.weta)) +
+  geom_histogram(colour = "black",
+                 fill = "grey") 
+
+```
+
+## Individual exercises - answers (2) 
+- scatter plot of NCOR against substrate density, colour by topo, size by shrub, theme_classic
+
+```{r, eval = FALSE}
+ggplot(mite_all, aes(x = SubsDens, y = NCOR)) +
+  geom_point(aes(colour = Topo, 
+                 size = Shrub)) + 
+  theme_grey()
+
+```
+
 ## Questions so far? 
 \center
 ![mites](figures/mites.jpg) 
@@ -330,6 +351,8 @@ ggpairs(mite.env[ , c("SubsDens", "WatrCont", "Topo")],
 
 \LARGE Model done - now what?
 
+Assuming you have completed all assumption checks, overdispersion, etc (the model we will use is in fact overdispersed).
+
  Two options:
  
  (1) Plot the coefficients; or 
@@ -345,6 +368,7 @@ mite_brachy <- mite_all %>%
 mod1 <- glm(data = mite_brachy,
             formula = Brachy ~ SubsDens * Shrub,
             family = poisson)
+
 ```
 
  
@@ -457,7 +481,8 @@ ggplot() +
             aes(x = long, 
                 y = lat, 
                 group = group)) +
-  geom_point(data = kaka_data[ !is.na(kaka_data$latitude), ], 
+  geom_point(data = kaka_data[ !is.na(kaka_data$latitude),
+                               ], 
              aes(x = longitude, 
                  y = latitude, 
    colour = quality_grade),
@@ -493,6 +518,9 @@ parrotmap <- ggplot() +
 parrotmap
 ```
 
+## Saving
+Just discussed in workshop as an extra. See the extra materials folder, ggplot2 intermediate handout for code and discussion.
+
 ## The end
 
 \Huge 
@@ -505,7 +533,7 @@ oliviarata.wordpress.com
 
 http://github.com/orb16 
 
-Or come to the poster session :) 
+Or come to the poster session on Tuesday :) 
 
 ## Want to share/use/improve?
 Please do!
