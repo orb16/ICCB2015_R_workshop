@@ -17,9 +17,13 @@ Olivia
 
 (1) See the extra materials folder  
 
-(2) For those who requested some references for learning R: 
+(2) For those interested in 3D graphs, see my tutorial on it - https://oliviarata.wordpress.com/2015/03/07/visualising-model-predictions-with-3d-graphs/
+
+(3) For those who requested some references for learning R: 
+
      (a) http://www.cookbook-r.com 
      (b) https://cran.r-project.org/doc/contrib/Paradis-rdebuts_en.pdf 
      (c) For checking what packages to use for a particular topic, see https://cran.r-project.org/web/views/ 
      (d) For help, try stackoverflow.com, or one of the r mailing lists: https://www.r-project.org/mail.html 
-    
+
+
