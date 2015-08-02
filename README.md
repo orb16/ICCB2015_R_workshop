@@ -23,7 +23,8 @@ Olivia
 
      (a) http://www.cookbook-r.com 
      (b) https://cran.r-project.org/doc/contrib/Paradis-rdebuts_en.pdf 
-     (c) For checking what packages to use for a particular topic, see https://cran.r-project.org/web/views/ 
-     (d) For help, try stackoverflow.com, or one of the r mailing lists: https://www.r-project.org/mail.html 
+     (c) A seminar series I organised: https://github.com/orb16/seminaRs
+     (d) For checking what packages to use for a particular topic, see https://cran.r-project.org/web/views/ 
+     (e) For help, try stackoverflow.com, or one of the r mailing lists: https://www.r-project.org/mail.html 
 
 
