@@ -9,13 +9,15 @@ Olivia
 
 ## Updated files post-workshop: 
 
+(This is just if you don't want to download the entire zip again) 
+
 (1) PDF of latest version of data manipulation with answers: http://bit.ly/1IAZsb0 
 
 (2) PDF of latest version of ggplot with answers: http://bit.ly/1hcFXvi 
 
 ## Extra info 
 
-(1) See the extra materials folder  
+(1) See the extra materials folder - lots of extra materials in there! - extensions of what we covered
 
 (2) For those interested in 3D graphs, see my tutorial on it - https://oliviarata.wordpress.com/2015/03/07/visualising-model-predictions-with-3d-graphs/
 
